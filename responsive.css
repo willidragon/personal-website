@@ -1,0 +1,140 @@
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+.home-page-text {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+
+@media (min-width: 768px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+        position: relative;
+    }
+    
+    .column-33{
+        flex: 33%;
+        max-width: 33%;
+        position: relative;
+    }
+    
+    .column-33 img{
+        width:100%;
+    }
+    
+    .column-66 img{
+        width:100%;
+    }
+    
+    .column-66{
+        flex: 66%;
+        max-width: 66%;
+        
+    }
+    
+    #giants-details{
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+    
+    
+    
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media (max-width: 768px){
+    
+    
+    .about-icons{
+        position: relative!important;
+        float: right;
+        left: 0px !important;
+        margin-left: 20px;
+        
+    }
+    
+    #giants-details{
+        margin-left: 0px;
+    }
+    
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    
+    .column-33{
+        flex: 100%;
+        max-width: 100%;
+    }
+    
+    .column-66{
+        flex: 100%;
+        max-width: 100%;
+    }
+    
+    
+
+    .left {
+        padding: 0px;
+    }
+    .right {
+        padding: 0px;
+    }
+    .image-gradient {
+        background: rgba(0, 0, 0, 0);
+        overflow: hidden;
+        z-index: 0;
+        
+    }
+
+    .image-gradient .image-text {
+        color: #ffffff;
+        background: rgba(0, 0, 0, 0.78);
+        padding: 10px 10px;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0);
+        position: absolute;
+        display: none;
+    }
+
+    .image-gradient .image-text span {
+        color: #ffffff;
+        display: none;
+
+    }
+    
+    .toHide{
+        display: block;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        height: 100%;
+        padding: 10px;
+    }
+
+    .home-page-text {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    
+    #WilliamSu{
+        left: 18px;
+    }
+    
+    #About{
+        right: 18px;
+    }
+    
+    .left-piston {
+        left: 18px;
+    }
+    
+
+    .right-piston {
+        left: calc(100% - 108px);
+    }
+}

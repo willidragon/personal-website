@@ -1,0 +1,282 @@
+html{
+    overflow-y: scroll;
+    height: 100%;
+    background-color: #ededed;
+}
+
+body{
+    height: 100%;
+    padding: 40px;
+    
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: black;
+    
+    
+    
+}
+
+footer{
+    margin-top: 20px;
+    
+}
+
+p{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    
+    
+}
+
+.homepage-font{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+}
+
+.bold{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.med{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.reg{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.little-cap{font-size: 12px}
+
+#test {
+    background-color: indianred;
+}
+
+
+
+
+#links {
+    text-align: center;
+    top: 7.5px;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    left: 0px;
+    transform: translateY(-7.5px);
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.55);
+    
+}
+
+#WilliamSu {
+    left: 48px;
+    position: fixed;
+    
+    
+    
+}
+
+
+
+header {
+    position: absolute;
+    
+    
+    height: 40px;
+    
+}
+
+#About {
+    right: 50px;
+    position: fixed;
+    
+}
+
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+
+.column,.column-33,.column-66{
+    
+    box-sizing: border-box;
+}
+
+.left{
+    padding-right: 5px
+}
+
+.right{
+    padding-left: 5px;
+}
+
+
+
+
+.column img {
+    
+    display: block;
+    vertical-align: middle;
+    width: 100%;
+    
+}
+
+.image-text {
+    float:left;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: transparent;
+    -webkit-transition: color 0.7s, padding 1s, border 1s; /* Safari */
+    transition: color 0.7s, padding 1s, border 1s;
+    padding: 100%;
+    border:1px solid rgba(0, 0, 0, 0);
+    border-radius:15px;
+    
+}
+
+.image-text span {
+    color:transparent;
+    -webkit-transition: color 0.7s; /* Safari */
+    transition: color 0.7s;
+}
+
+.column-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px;
+    
+}
+
+.image-gradient {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: background 0.5s; /* Safari */
+    transition: background 0.5s;
+    
+}
+
+.image-gradient:hover{
+    background:rgba(0, 0, 0, 0.5);
+    
+}
+
+.image-gradient:hover .image-text{
+    color: #ffffff;
+    
+    padding: 10px 10px;
+    border-radius:15px;
+    border:1px solid rgb(255, 255, 255);
+}
+
+.image-gradient:hover .image-text span{
+    color: #ffffff;
+    
+}
+
+.max-column {
+        flex: 100%;
+        max-width: 100%;
+        position: relative;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+
+.max-column img{
+    width:100%;
+    display: block;
+}
+
+#moving-piston {
+    height: 2px;
+    
+    width: 90px;
+    bottom: 0%;
+    background-color: black;
+    position: fixed;
+    -webkit-transition: left 0.8s, transform 0.8s; /* Safari */
+    transition: left 0.8s, transform 0.8s;
+    transition-timing-function: ease-in-out;
+    
+}
+
+.left-piston {
+    left: 48px;
+}
+.mid-piston {
+    width: 100px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.right-piston {
+    left: calc(100% - 138px);
+}
+
+
+.additional-caption {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.title-caption {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.toHide {
+    display: none;
+}
+
+#Middle {
+    left:10px;
+}
+
+#Current-heading {
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;   
+    
+    font-weight: 400;
+
+    
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    
+    position: fixed;
+}
+
+
+#iframe-memo{
+    width: 100%;
+    height: 100%;
+}
+
+.about-icons {
+    font-size: 20px;
+    position: absolute;
+    margin-bottom: 20px;
+    bottom: 0px;
+}
